@@ -1,0 +1,32 @@
+{
+  "name": "ceicsite",
+  "version": "1.0.0",
+  "description": "pagina para el ceic",
+  "main": "index.js",
+  "repository": "git@github.com:usbceic/ceicsite.git",
+  "author": "CEIC",
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-messages": "^1.0.1",
+    "express-react-views": "*",
+    "express-session": "^1.15.6",
+    "express-validator": "^4.3.0",
+    "mongoose": "^5.0.0-rc0",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "^1.14.3",
+    "standard": "^10.0.3"
+  }
+}
