@@ -10,6 +10,11 @@ Página web del CEIC.
 
 Si deseas colaborar, ponte en contacto con la Coordinación de Información y Tecnología.
 
+* Gustavo Castellanos (Coordinador Principal de Información y Tecnología de JD-CEIC 2017-2018): [@gustavoaca1997](https://github.com/gustavoaca1997)
+* Germán Robayo (Coordinador Adjunto de Información y Tecnologíá de JD-CEIC 2017-2018): [@german1608](https://github.com/german1608)
+* David Rodríguez (Tesorero Adjunto de JD-CEIC 2017-2018): [@dwest06](https://github.com/dwest06)
+* Santiago De Viana (Coordinador Adjunto de Cultura y Eventos de JD-CEIC 2017-2018): [@Jamez312](https://github.com/jamez312)
+
 ## Contacto
 
 ¡Sígannos en nuestras redes!
@@ -19,4 +24,3 @@ Si deseas colaborar, ponte en contacto con la Coordinación de Información y Te
 * Twitter: @USBCEIC
 * Telegram: CEIC USB (t.me/usbceic)
 * Instagram: @usbceic
-
