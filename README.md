@@ -12,8 +12,10 @@ Si deseas colaborar, ponte en contacto con la Coordinación de Información y Te
 
 * Gustavo Castellanos (Coordinador Principal de Información y Tecnología de JD-CEIC 2017-2018): [@gustavoaca1997](https://github.com/gustavoaca1997)
 * Germán Robayo (Coordinador Adjunto de Información y Tecnologíá de JD-CEIC 2017-2018): [@german1608](https://github.com/german1608)
-* David Rodríguez (Tesorero Adjunto de JD-CEIC 2017-2018): [@dwest06](https://github.com/dwest06)
-* Santiago De Viana (Coordinador Adjunto de Cultura y Eventos de JD-CEIC 2017-2018): [@Jamez312](https://github.com/jamez312)
+* Arturo Yepez (Coordinador Principal de Información y Tecnología de JD-CEIC 2018-2019): [@arturyepez10](https://github.com/arturyepez10)
+* Luis Pino (Coordinador Adjunto de Información y Tecnologíá de JD-CEIC 2018-2019): [@lapy0110](https://github.com/lapy0110)
+* Andres Torres (Presidente de JD-CEIC 2018-2019): [@aitorres](https://github.com/aitorres)
+
 
 ## Contacto
 
