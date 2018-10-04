@@ -1,0 +1,51 @@
+/*Home CEIC SITE*/
+/*Header*/
+.logo-header{
+    width: 50px;
+}
+
+.menu-header{
+    text-align: right;
+}
+
+header{
+    font-family: 'K2D', sans-serif;
+}
+
+
+
+/*Contendor CENTRO*/
+.main-title{
+    position:relative;
+    font-family: 'K2D', sans-serif;
+}
+
+.image-main-tilte{
+    position: absolute;
+    font-family: 'K2D', sans-serif;
+}
+
+/**Navbar**/
+.logo-navbar{
+    width: 60px;
+}
+
+.Navbar{
+    background-color: #040931;
+    color:#fff;
+    text-align: center;
+    font-size: 10pt;
+    font-family: 'K2D', sans-serif;
+}
+
+/*Footer*/
+footer{
+    text-align: center;
+    font-size: 12pt;
+    background: #040931;
+}
+
+footer p{
+    color:#fff;
+    font-family: 'K2D', sans-serif;
+}
