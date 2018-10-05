@@ -73,13 +73,14 @@ header li{
 
 /*Contendor CENTRO*/
 .main-title{
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     font-family: 'K2D', sans-serif;
     font-size: 15pt;
     color: #fefffd;
     text-align: center;
     z-index: 30;
+    margin: 250px;
 }
 
 .main-title h1{
