@@ -56,6 +56,21 @@ header li{
     display: inline;
 }
 
+.sign-in{
+    border: 1px #fefffd solid;
+    padding: 3px;
+}
+
+.sign-in:hover{
+    border: 1px #fefffd solid;
+    padding: 3px;
+    background: #fefffd;
+}
+
+.sign-in a:hover{
+    color: #00076D;
+}
+
 /*Contendor CENTRO*/
 .main-title{
     padding-top: 200px;
@@ -65,6 +80,10 @@ header li{
     color: #fefffd;
     text-align: center;
     z-index: 30;
+}
+
+.main-title h1{
+    background: #000;
 }
 
 /*Espacio de Creatividad*/
