@@ -32,6 +32,9 @@ header{
     background: #00076D;
     color: #fefffd;
     text-decoration: none;
+    position: fixed;
+    width: 100%;
+    margin-top: -18.5%;
 }
 
 header p{
