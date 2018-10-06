@@ -22,6 +22,7 @@ body, html {
 }
 
 header table{
+    padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
     width: 100%;
@@ -34,7 +35,7 @@ header{
     text-decoration: none;
     position: fixed;
     width: 100%;
-    margin-top: -18.5%;
+    margin-top: -19%;
 }
 
 header p{
