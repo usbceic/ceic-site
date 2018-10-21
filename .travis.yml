@@ -1,0 +1,35 @@
+language: python
+addons:
+  firefox: latest
+env:
+- MOZ_HEADLESS=1
+python:
+- '3.5'
+- '3.6'
+services:
+- postgresql
+before_install:
+- pip install --upgrade pip
+install:
+- pip install -r requirements.txt
+- "./installgeckodriver.sh"
+before_script:
+- export DB_NAME=test
+- export DB_USER=postgres
+- export DB_PASSWORD=
+script:
+- "./test.sh"
+notifications:
+  email:
+  - germanrobayo33@gmail.com
+  - usbceic@gmail.com
+branches:
+  only:
+  - master
+deploy:
+  provider: heroku
+  api_key:
+    secure: e9BEQTlKdyqrmX5SbLDMHyRCsVHMBWRx/Z7CKpjXILvS0uloyB2lMWKCWacJ6Sri5BVSnWn1LmTCY9Y+AZ4ZjCgjqRmL6cSCBO3waypSmTeKKOx5VSNX6UMvRFeDczWIspFyfk/dVsTqDGc/b9xsh/dsSxe+S66X8+zcxBzmnOLthHKrIpp6kYPZWDNPUBH4GyEIG8nA/D5bfuADFQBp2emhDsN436m8Q1MLp9zrMPQz6aUEBxYmMRrVPFacIRIviNnWTezEcCq5D3YV0vEmDlTk8bbPN+whc0VVwuvaDOY5rFcFPA3iQ2s0NdejlnuJfcK6aaC4QZwAOmeP1JG543lUFXr5aOaW1w3fKm8KXP7t6zO8QL+JiIYJGWo78At8IOas0kl44Iwhkf+mDGOrU4AO1YmLSogpZeUlbRlBitoqsxBHAn/KAeNINcXt2o3rCtGlEPge/nSrmJxHcK5I4HYjV4SHvMXuD4ZdguGf5kylGaBhIVfFw8fD7PRepAp+w54LV7NN/geqtLmvRw824gGmwU458bLUlsmiS0eZDluAUZj16ohVej9PoBxwv/0+UlhR+Kt7O9NxyJ+luH01nHI3phYI8ycHGpRSAvsQ7uQ2/kGHB7zRmeaCObtmwHbIV+CALAzsOQRlTFy9ZWpXX+yhuywK7fUL5f+vLp2G3ws=
+  app: ceicsite
+  on:
+    repo: usbceic/ceic-site
