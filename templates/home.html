@@ -1,22 +1,22 @@
+{% load static %}
 <!DOCTYPE html>
 
-{% load static %}
 <!--Pagina Home: Sitio web CEIC-->
 <html>
     <head>
         <title>CEIC USB</title>
-        <link rel="StyleSheet" href="assets/CSS/home.css" type="text/css">
+        <link rel="StyleSheet" href={% static 'CSS/home.css' %} type="text/css">
         <meta charset="UTF-8">
         <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet"> 
-        <link rel="shortcut icon" href="assets/images/logo.png">
+        <link rel="shortcut icon" href={% static 'images/logo.png' %}>
     </head>
 
-    <body background="assets/images/hipster_workspace.jpg">
+    <body background={% static 'images/hipster_workspace.png' %}>
         <!--HEADER-->
         <header>
             <table>
                 <tr>
-                    <td><img class="logo-header" src="assets/images/logo.png" alt="Logo del Ceic"></td>
+                    <td><img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
                     <td>
                         <p><strong>Centro de estudiantes de Ingeniería de la Computación</strong></p>
                         <p><i>Universidad Simón Bolívar</i></p>
@@ -48,7 +48,7 @@
         <div class="Navbar">
             <table class="table-header">
                 <tr>
-                    <td><img class="logo-navbar" src="assets/images/logo.png" alt="Logo del Ceic"></td>
+                    <td><img class="logo-navbar" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
                     <!--Salita-->
                     <td>
                         <ul>
@@ -91,9 +91,9 @@
                     </td>
                     <td>
                         <ul>
-                            <li><a href="https://twitter.com/USBCEIC" target="_blank"><img src="assets/images/twitter.svg" alt="Logo Twitter"></a></li>
-                            <li><a href="https://www.instagram.com/usbceic/" target="_blank"><img src="assets/images/instagram.svg" alt="Logo Instagram"></a></li>
-                            <li><a href="https://www.linkedin.com/company/ceicusb/" target="_blank"><img src="assets/images/linkedin.svg" alt="Logo linkedIn"></a></li>
+                            <li><a href="https://twitter.com/USBCEIC" target="_blank"><img src={% static 'images/twitter.svg' %} alt="Logo Twitter"></a></li>
+                            <li><a href="https://www.instagram.com/usbceic/" target="_blank"><img src={% static 'images/instagram.svg' %} alt="Logo Instagram"></a></li>
+                            <li><a href="https://www.linkedin.com/company/ceicusb/" target="_blank"><img src={% static 'images/linkedin.svg' %} alt="Logo linkedIn"></a></li>
                         </ul>
                     </td>
                 </tr>
