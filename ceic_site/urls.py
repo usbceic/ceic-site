@@ -15,10 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.views.generic import TemplateView
 from django.conf.urls import include
 
-urlpatterns = [
+urlpatterns = [ # pylint: disable=invalid-name
     path('admin/', admin.site.urls),
     path('', include('info.urls')),
 ]
