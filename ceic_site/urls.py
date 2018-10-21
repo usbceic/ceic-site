@@ -18,7 +18,10 @@ from django.urls import path
 from django.views.generic import TemplateView
 from django.conf.urls import include
 
+#	Recordar conectar las direcciones de las urls de otras apps
 urlpatterns = [
+	# Sitio encargado del manejo del espacio de admins del projecto
     path('admin/', admin.site.urls),
+    # Se importan las direcciones que estan en la App "info"
     path('', include('info.urls')),
 ]

@@ -34,6 +34,7 @@ ALLOWED_HOSTS = [
 
 # Application definition
 
+###   IMPORTANTE: Despues de crear una app nueva del projecto ha de añadirse aquí
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -55,6 +56,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+# Dirección donde convergen todas las URLs configuradas del sitio
 ROOT_URLCONF = 'ceic_site.urls'
 
 TEMPLATES = [
@@ -78,6 +80,7 @@ WSGI_APPLICATION = 'ceic_site.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.1/ref/settings/#databases
+#   Se manejan las bases de datos con POSTGRES
 
 DATABASES = {
     'default': {
@@ -91,6 +94,7 @@ DATABASES = {
 }
 
 AUTH_USER_MODEL = 'usuarios.Usuario'
+
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
@@ -125,7 +129,7 @@ USE_TZ = True
 
 
 # Static files (CSS, JavaScript, Images)
-# https://docs.djangoproject.com/en/2.1/howto/static-files/
+#    Aqui se almacenan todos los assets de los templates a utilizar
 
 STATIC_URL = '/static/'
 STATIC_ROOT = '/static/'

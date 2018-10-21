@@ -1,4 +1,5 @@
 #!/bin/bash
+# Esto modifica e inicializa la DB en postgres
 
 sudo -u postgres dropdb ceic_site >> /dev/null
 sudo -u postgres dropuser ceicsite >> /dev/null
