@@ -2,26 +2,36 @@
 <!DOCTYPE html>
 
 <!--Pagina Home: Sitio web CEIC-->
+<!--
+    Este sitio web esta siendo diseñado por el centro de estudiantes de ingenieria de la computación de la 
+    universidad Simón Bolívar. Incio de Desarrolo: Julio de 2018
+-->
 <html>
     <head>
         <title>CEIC USB</title>
-        <link rel="StyleSheet" href={% static 'CSS/home.css' %} type="text/css">
+        <link rel="StyleSheet" href={% static 'CSS/home.css' %} type="text/css">  <!-- Hoja de estilos del sitio -->
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet"> 
-        <link rel="shortcut icon" href={% static 'images/logo.png' %}>
+        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">  <!-- Google Font K2D usada en Header, Footer y Navbar -->
+        <link rel="shortcut icon" href={% static 'images/logo.png' %}>  <!-- Favicon: Logo del Centro -->
     </head>
 
-    <body background={% static 'images/hipster_workspace.jpg' %}>
+    <body background={% static 'images/hipster_workspace.jpg' %}>  <!-- Imgen de Workspace para efecto parallax donde aparece el nombre del centro  -->
         <!--HEADER-->
+         <!-- 
+             En este div tenemos el logo del centro la identififacaión, un menu de navegación de acceso rapido y el boton
+             de inicio de sesión para los computistas afiliados 
+          -->
         <header>
             <table>
                 <tr>
+                     <!-- Area de identifiación del sitio web: Logo y Nombre -->
                     <td><img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
                     <td>
                         <p><strong>Centro de estudiantes de Ingeniería de la Computación</strong></p>
                         <p><i>Universidad Simón Bolívar</i></p>
                     </td>
                     <td>
+                        <!-- Area de Menú de Navegación Rapida e inicio de sesión -->
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="">Cuartico</a></li>
@@ -35,6 +45,10 @@
 
        
         <!--BANNER DE BIENVENIDA-->
+         <!-- 
+             En esta area aparece el identificando nuevamente el nombre del centro en conjunto con una imagen 
+             de fondo de la sala de lectura
+          -->
         <div class="main-title">
             <h1>Centro de Estudiantes de Ingeniería de la Computación</h1>
         </div>
@@ -45,6 +59,9 @@
         </div>
 
         <!--NAVBAR -->
+        <!-- 
+            En esta area tenemos un area de navegación extendida, donde 
+         -->
         <div class="Navbar">
             <table class="table-header">
                 <tr>
