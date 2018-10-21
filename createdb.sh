@@ -9,5 +9,6 @@ alter user ceicsite with encrypted password 'ceicsite';
 alter role ceicsite set client_encoding to 'utf8';
 alter role ceicsite set default_transaction_isolation to 'read committed';
 alter role ceicsite set timezone to 'utc';
+alter role ceicsite createdb;
 grant all privileges on database ceic_site to ceicsite ;\q
 EOF
