@@ -113,6 +113,10 @@ header li{
 }
 
 /*Contendor CENTRO*/
+/*
+    Se agrega padding en la parte superior e inferior para que sea un cuadro de tamaño similar al alto de la pantalla, se 
+    define el tipo de fuente en K2D (Google Font), de tamaño 15 y color blanco para hacer contraste con el fondo. Centrada
+*/
 .main-title{
     padding-top: 50px;
     padding-bottom: 50px;
