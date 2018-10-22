@@ -181,6 +181,11 @@ header li{
 }
 
 /*Footer*/
+/*
+    Utilizamos todos los atributos propios para que el footer cumpla con las caracteristicas coincidan con el diseño planteado
+    En especial el padding para mantenr distancia con el borde de pagina y el bloque de arriba para evitar que queden bordes
+    blancos. Se define el tipo de letra como K2D como standar del sitio
+*/
 footer{
     text-align: center;
     font-size: 11pt;
