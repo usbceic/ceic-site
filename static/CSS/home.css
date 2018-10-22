@@ -2,7 +2,7 @@
 /*
     Definimos el fondo para el parallax ocupando el total del despacio
     al igual que bloqueamos que se repita y le ponemos el artributo fixed
-    para que no se mueva y simule el efecto parallax
+    para que no se mueva y simule el efecto parallax.
 */
 body{
     margin:0px 0px 0px 0px;
@@ -20,7 +20,7 @@ body, html {
 /*Header*/
 /*
     Ajustamos el logo a un tamaño acorde al header. Utilizamos padding para definir el espacio que el logo
-    debe tener con respecto al resto de los elementos y al borde
+    debe tener con respecto al resto de los elementos y al borde.
 */
 .logo-header{
     width: 60px;
@@ -33,7 +33,7 @@ body, html {
 /*
     Barra donde tenemos alojado el menú del sitio, el nombre y el logo. Utilizamos padding para
     defnir su distancia con respecto a los bordes y el tamaño en 100 para que ocupe todo el ancho
-    de la pantalla
+    de la pantalla.
 */
 
 header table{
@@ -47,7 +47,7 @@ header table{
     Definimos el tipo de letra a utilizar en todo el div, siendo escogida la google font K2D, el color de 
     fondo de la barra, el clor del texto, la eliminación de los atributos graficos de los links y que ocupe
     el total de la pantalla. Se utiliza el atributo fixed para que la barra no se mueve y sea visible en todo
-    momento
+    momento.
 */
 
 header{
@@ -62,7 +62,7 @@ header{
 
 /*
    Definimos los atributos del texto. El alto de texto para que las lineas estén menos separas, alineados
-   a la izquieda, sin decoración, de color blanco y con el padding correpondiente 
+   a la izquieda, sin decoración, de color blanco y con el padding correpondiente para mantener la sepración.
 */
 
 header p{
@@ -79,7 +79,8 @@ header a{
 }
 
 /*
-        
+     Eliminamos los puntos en la listas para seguir correctamente el diseño planteado. De igual manera usamos display:inline
+     para que todos los elementos de la lista aparezcan uno al lado del otro en vez de en la forma tradicional.   
 */
 
 header ul{
@@ -90,6 +91,11 @@ header ul{
 header li{
     display: inline;
 }
+
+/*
+    Diseñamos utilizando box design el botón de inicio de sesión. Se aplica borde, padding para separar las letras del recuadro
+    y hover para que cmabie de color al mover el cursor encima de el.
+*/
 
 .sign-in{
     border: 1px #fefffd solid;
