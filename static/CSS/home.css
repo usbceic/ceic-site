@@ -1,4 +1,9 @@
 /*Home CEIC SITE*/
+/*
+    Definimos el fondo para el parallax ocupando el total del despacio
+    al igual que bloqueamos que se repita y le ponemos el artributo fixed
+    para que no se mueva y simule el efecto parallax
+*/
 body{
     margin:0px 0px 0px 0px;
     background-repeat: no-repeat;
@@ -13,6 +18,10 @@ body, html {
 
 
 /*Header*/
+/*
+    Ajustamos el logo a un tamaño acorde al header. Utilizamos padding para definir el espacio que el logo
+    debe tener con respecto al resto de los elementos y al borde
+*/
 .logo-header{
     width: 60px;
     padding-left: 25px;
@@ -21,12 +30,25 @@ body, html {
     padding-bottom: 5px;
 }
 
+/*
+    Barra donde tenemos alojado el menú del sitio, el nombre y el logo. Utilizamos padding para
+    defnir su distancia con respecto a los bordes y el tamaño en 100 para que ocupe todo el ancho
+    de la pantalla
+*/
+
 header table{
     padding-top: 15px;
     padding-left: 25px;
     padding-right: 25px;
     width: 100%;
 }
+
+/*
+    Definimos el tipo de letra a utilizar en todo el div, siendo escogida la google font K2D, el color de 
+    fondo de la barra, el clor del texto, la eliminación de los atributos graficos de los links y que ocupe
+    el total de la pantalla. Se utiliza el atributo fixed para que la barra no se mueve y sea visible en todo
+    momento
+*/
 
 header{
     font-family: 'K2D', sans-serif;
@@ -37,6 +59,11 @@ header{
     width: 100%;
     margin-top: -19%;
 }
+
+/*
+   Definimos los atributos del texto. El alto de texto para que las lineas estén menos separas, alineados
+   a la izquieda, sin decoración, de color blanco y con el padding correpondiente 
+*/
 
 header p{
     line-height: 25%;
@@ -50,6 +77,10 @@ header a{
     padding-left: 5px;
     padding-right: 5px;
 }
+
+/*
+        
+*/
 
 header ul{
     list-style: none;
