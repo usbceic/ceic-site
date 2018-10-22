@@ -140,10 +140,15 @@ header li{
    text-align: center;
 }
 /**Navbar**/
+
 .logo-navbar{
     width: 80px;
 }
 
+/*
+    Definimos el color de fondo, color de las letras y la alineación de acuerdo con lo planteado en el diseño.
+    Utilizamos column-count para que las listas no pasen de una sola columna
+*/
 .Navbar{
     background-color: #040931;
     color:#fefffd;
@@ -158,6 +163,11 @@ header li{
     text-decoration: none;
 }
 
+/*
+    Utilizamos el paddig para definir la separación de la tabla que contiene todos los menús de los bordes, así coincide con 
+    el diseño propuesto. De igual manera se pone el valor width en 100% para que seimpre sea tan ancha como la pantalla.
+    Se eliminan los puntos de las listas para cumplir con el diseño.
+*/
 .table-header{
     padding-top: 25px;
     padding-left: 50px;
