@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Iniciar Sesión - CEIC USB</title>
+        <link rel="StyleSheet" href={% static 'CSS/login.css' %} type="text/css">  <!-- Hoja de estilos del sitio -->
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">  <!-- Google Font K2D usada en Header, Footer y Navbar -->
+        <link rel="shortcut icon" href={% static 'images/logo.png' %}>  <!-- Favicon: Logo del Centro -->
+        <meta name="viewport" content="widtf=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href={% static 'bootstrap/css/bootstrap.min.css' %}>
+    </head>
+
+    <body>
+        <header>
+            <table>
+                <tr>
+                    <!-- Area de identifiación del sitio web: Logo y Nombre -->
+                    <td><img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
+                    <td>
+                        <p><strong>Centro de estudiantes de Ingeniería de la Computación</strong></p>
+                        <p><i>Universidad Simón Bolívar</i></p>
+                    </td>
+                    <td>
+                        <!-- Area de Menú de Navegación Rapida e inicio de sesión -->
+                        <ul>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Cuartico</a></li>
+                            <li><a href="">Contacto</a></li>
+                            <li class="sign-in"><a href="">Inicia sesión</a></li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </header>
+        
+        <footer>
+            <p> &copy; 2018 CEIC Official Website - All rights reserved</p>
+        </footer>
+
+    </body>
+</html>
