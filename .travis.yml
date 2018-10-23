@@ -33,3 +33,4 @@ deploy:
   app: ceicsite-dev
   on:
     repo: usbceic/ceic-site
+    python: '3.6'
