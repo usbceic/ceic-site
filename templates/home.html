@@ -2,26 +2,36 @@
 <!DOCTYPE html>
 
 <!--Pagina Home: Sitio web CEIC-->
+<!--
+    Este sitio web esta siendo diseñado por el centro de estudiantes de ingenieria de la computación de la 
+    universidad Simón Bolívar. Incio de Desarrolo: Julio de 2018
+-->
 <html>
     <head>
         <title>CEIC USB</title>
-        <link rel="StyleSheet" href={% static 'CSS/home.css' %} type="text/css">
+        <link rel="StyleSheet" href={% static 'CSS/home.css' %} type="text/css">  <!-- Hoja de estilos del sitio -->
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet"> 
-        <link rel="shortcut icon" href={% static 'images/logo.png' %}>
+        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">  <!-- Google Font K2D usada en Header, Footer y Navbar -->
+        <link rel="shortcut icon" href={% static 'images/logo.png' %}>  <!-- Favicon: Logo del Centro -->
     </head>
 
-    <body background={% static 'images/hipster_workspace.jpg' %}>
+    <body background={% static 'images/hipster_workspace.jpg' %}>  <!-- Imgen de Workspace para efecto parallax donde aparece el nombre del centro  -->
         <!--HEADER-->
+         <!-- 
+             En este div tenemos el logo del centro la identififacaión, un menu de navegación de acceso rapido y el boton
+             de inicio de sesión para los computistas afiliados 
+          -->
         <header>
             <table>
                 <tr>
+                     <!-- Area de identifiación del sitio web: Logo y Nombre -->
                     <td><img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
                     <td>
                         <p><strong>Centro de estudiantes de Ingeniería de la Computación</strong></p>
                         <p><i>Universidad Simón Bolívar</i></p>
                     </td>
                     <td>
+                        <!-- Area de Menú de Navegación Rapida e inicio de sesión -->
                         <ul>
                             <li><a href="">Home</a></li>
                             <li><a href="">Cuartico</a></li>
@@ -35,21 +45,36 @@
 
        
         <!--BANNER DE BIENVENIDA-->
+         <!-- 
+             En esta area aparece el identificando nuevamente el nombre del centro en conjunto con una imagen 
+             de fondo de la sala de lectura
+          -->
         <div class="main-title">
             <h1>Centro de Estudiantes de Ingeniería de la Computación</h1>
         </div>
 
         <!--Espacio de Creatividad-->
+        <!--
+            Esta area esta destinada a crear espacios de interacción al computista, como por ejemplo la integración
+            de un carrusel de noticias relacionadas al canal de telegram, al igual que imagenes de eventos recientes
+            y proximos
+        -->
         <div class="Nada">
             <p><strong>Hola! Ya no sabía que mas poner aqui</strong></p>
         </div>
 
         <!--NAVBAR -->
+        <!-- 
+            En esta area tenemos un area de navegación extendida, donde los usuarios podran acceder al total de las
+            funciones ofrecidas por la aplicación. Estos estan relacionados con la Sala de Lectura, Formación academica
+            y profesional, información propia del centro y el CEIC SUITE
+         -->
         <div class="Navbar">
             <table class="table-header">
                 <tr>
                     <td><img class="logo-navbar" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
                     <!--Salita-->
+                    <!--Links a las paginas de los servicios relacionados a la sala de lectura-->
                     <td>
                         <ul>
                             <li><p><strong>Salita</strong></p></li>
@@ -61,6 +86,7 @@
                        
                     </td>
                     <!--Profesión-->
+                    <!--Links a las paginas relacionadas al desarrollo academico y profesional de los computistas -->
                     <td>
                         <ul>
                             <li><p><strong>Profesión</strong></p></li>
@@ -71,7 +97,7 @@
                         </ul>
                     </td>
                     <!--Ceic Suite-->
-                    
+                    <!--PENDIENTE: Servicios relacionados al CEIC SUITE como prestamos de libros-->
                     <td>
                         <ul>
                            <li><p><strong>Ceic Suite</strong></p></li>
@@ -81,6 +107,7 @@
                         </ul>
                     </td>
                     <!--Información-->
+                    <!--Links a las paginas de infomración especifica del Centro de estudiantes-->
                     <td>
                         <ul>
                             <li><p><strong>Información</strong></p></li>
@@ -91,6 +118,8 @@
                     </td>
                     <td>
                         <ul>
+                            <!--Area del NAvbar dedicada a mostrar las redes sociales del Centro para que los usuarios puedas
+                            estar actualizados con la información de la carrera-->
                             <li><a href="https://twitter.com/USBCEIC" target="_blank"><img src={% static 'images/twitter.svg' %} alt="Logo Twitter"></a></li>
                             <li><a href="https://www.instagram.com/usbceic/" target="_blank"><img src={% static 'images/instagram.svg' %} alt="Logo Instagram"></a></li>
                             <li><a href="https://www.linkedin.com/company/ceicusb/" target="_blank"><img src={% static 'images/linkedin.svg' %} alt="Logo linkedIn"></a></li>
@@ -102,6 +131,10 @@
         </div>
 
         <!--FOOTER-->
+        <!--
+            En esta area se define el copyright del desarrollo del sitio web del centro al igual que el año de su ultima
+            edición
+        -->
         <footer>
             <p> &copy; 2018 CEIC Official Website - All rights reserved</p>
         </footer>
