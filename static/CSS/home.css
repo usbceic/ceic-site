@@ -7,7 +7,7 @@
 
 @font-face{
     font-family: 'K2D';
-    src:url('/static/fonts/K2D-Regular')
+    src:url('../fonts/K2D-Regular')
 }
 body{
     margin:0px 0px 0px 0px;
