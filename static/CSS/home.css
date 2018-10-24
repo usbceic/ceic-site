@@ -4,6 +4,11 @@
     al igual que bloqueamos que se repita y le ponemos el artributo fixed
     para que no se mueva y simule el efecto parallax.
 */
+
+@font-face{
+    font-family: 'K2D';
+    src:url('/static/fonts/K2D-Regular')
+}
 body{
     margin:0px 0px 0px 0px;
     background-repeat: no-repeat;
