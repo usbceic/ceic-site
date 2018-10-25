@@ -15,13 +15,14 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.views.generic import TemplateView
+from django.conf import settings
 from django.conf.urls import include
+from django.conf.urls.static import static
 
-#	Recordar conectar las direcciones de las urls de otras apps
-urlpatterns = [
+# Recordar conectar las direcciones de las urls de otras apps
+urlpatterns = [  # pylint: disable=invalid-name
 	# Sitio encargado del manejo del espacio de admins del projecto
     path('admin/', admin.site.urls),
     # Se importan las direcciones que estan en la App "info"
     path('', include('info.urls')),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'ceicsite.herokuapp.com'
+    '.herokuapp.com'
 ]
 
 
@@ -132,7 +132,7 @@ USE_TZ = True
 #    Aqui se almacenan todos los assets de los templates a utilizar
 
 STATIC_URL = '/static/'
-STATIC_ROOT = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'static')
 ]
