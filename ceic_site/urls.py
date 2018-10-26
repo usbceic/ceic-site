@@ -21,7 +21,7 @@ from django.conf.urls.static import static
 
 # Recordar conectar las direcciones de las urls de otras apps
 urlpatterns = [  # pylint: disable=invalid-name
-	# Sitio encargado del manejo del espacio de admins del projecto
+    # Sitio encargado del manejo del espacio de admins del projecto
     path('admin/', admin.site.urls),
     # Se importan las direcciones que estan en la App "info"
     path('', include('info.urls')),
