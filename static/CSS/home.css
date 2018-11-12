@@ -125,6 +125,8 @@ header li{
     font-size: 10pt;
     font-family: 'K2D', sans-serif;
     column-count: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .Navbar a{
