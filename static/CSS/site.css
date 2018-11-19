@@ -8,7 +8,18 @@
     font-family: 'K2D';
 }
 
-navbar-brand{
-    text-align:center;
+/* sobreescribir clase de titulo de navbar de bootstrap para adaptar al site*/
+.navbar-brand{
     font-size: 1em;
+    line-height: 1.3;
+}
+
+.btn-navbar{
+    color:  white;
+    border-color:white;
+}
+.btn-navbar:hover{
+    color:  white;
+    background-color: #efcc00;
+    border-color: #efcc00;
 }
