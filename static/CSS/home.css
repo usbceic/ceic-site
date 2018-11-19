@@ -108,7 +108,7 @@ header li{
    font-family: 'K2D', sans-serif;
    text-align: center;
 }
-/**Navbar**/
+/**Navbar del footer**/
 
 .logo-navbar{
     width: 80px;
@@ -118,7 +118,7 @@ header li{
     Definimos el color de fondo, color de las letras y la alineación de acuerdo con lo planteado en el diseño.
     Utilizamos column-count para que las listas no pasen de una sola columna
 */
-.Navbar{
+.footbar{
     background-color: #040931;
     color:#fefffd;
     text-align: center;
@@ -129,12 +129,12 @@ header li{
     padding-bottom: 15px;
 }
 
-.Navbar a{
+.footbar a{
     color:#fefffd;
     text-decoration: none;
 }
 
-.Navbar ul{
+.footbar ul{
     list-style: none;
 }
 
