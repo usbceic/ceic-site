@@ -13,6 +13,7 @@
         <link rel="shortcut icon" href={% static 'images/logo.png' %}>
         <meta name="viewport" content="widtf=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
         <link rel="stylesheet" href={% static 'bootstrap/css/bootstrap.min.css' %}>
+        <link rel="stylesheet" href={% static 'CSS/site.css' %}>
         <link rel="stylesheet" href={% static 'CSS/home.css' %}>
     </head>
 
@@ -45,6 +46,30 @@
                 </div>
             </div>
         </header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic">
+            <a class="navbar-brand" href="#">Centro de estudiantes de Ingeniería de la Computación</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse offset-md-5" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cuartico</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                    <form class="form-inline">
+                        <button class="btn btn-outline-success" type="button">Iniciar sesión</button>
+                    </form>
+                    </ul>
+                </div>
+        </nav>
 
        
         <!--BANNER DE BIENVENIDA-->

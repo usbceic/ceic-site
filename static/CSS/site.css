@@ -1,0 +1,14 @@
+/* Configurando la fuente a utilizar en el site */
+@font-face{
+    font-family: 'K2D';
+    src:url('../fonts/K2D/K2D-Regular.ttf')
+}
+
+*{
+    font-family: 'K2D';
+}
+
+navbar-brand{
+    text-align:center;
+    font-size: 1em;
+}

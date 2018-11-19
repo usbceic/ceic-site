@@ -10,6 +10,11 @@
     src:url('../fonts/K2D/K2D-Regular.ttf')
 }
 
+
+*{
+    font-family: 'K2D';
+}
+
 body, html {
     height: 100%;
 }
