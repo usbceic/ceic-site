@@ -9,38 +9,41 @@
 <html>
     <head>
         <title>CEIC USB</title>
-        <link rel="StyleSheet" href={% static 'CSS/home.css' %} type="text/css">  <!-- Hoja de estilos del sitio -->
         <meta charset="UTF-8">
-        <link href="https://fonts.googleapis.com/css?family=K2D" rel="stylesheet">  <!-- Google Font K2D usada en Header, Footer y Navbar -->
-        <link rel="shortcut icon" href={% static 'images/logo.png' %}>  <!-- Favicon: Logo del Centro -->
+        <link rel="shortcut icon" href={% static 'images/logo.png' %}>
+        <meta name="viewport" content="widtf=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0,minimum-scale=1.0">
+        <link rel="stylesheet" href={% static 'bootstrap/css/bootstrap.min.css' %}>
+        <link rel="stylesheet" href={% static 'CSS/home.css' %}>
     </head>
 
-    <body background={% static 'images/hipster_workspace.jpg' %}>  <!-- Imgen de Workspace para efecto parallax donde aparece el nombre del centro  -->
+    <body>  <!-- Imgen de Workspace para efecto parallax donde aparece el nombre del centro  -->
         <!--HEADER-->
          <!-- 
              En este div tenemos el logo del centro la identififacaión, un menu de navegación de acceso rapido y el boton
              de inicio de sesión para los computistas afiliados 
           -->
         <header>
-            <table>
-                <tr>
+            <div class="container-fluid">
+                <div class="row">
                      <!-- Area de identifiación del sitio web: Logo y Nombre -->
-                    <td><img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
-                    <td>
+                    <div class="col-md-1"><img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic"></div>
+                    <div class="Title">
                         <p><strong>Centro de estudiantes de Ingeniería de la Computación</strong></p>
                         <p><i>Universidad Simón Bolívar</i></p>
-                    </td>
-                    <td>
-                        <!-- Area de Menú de Navegación Rapida e inicio de sesión -->
-                        <ul>
-                            <li><a href="">Home</a></li>
-                            <li><a href="">Cuartico</a></li>
-                            <li><a href="">Contacto</a></li>
-                            <li class="sign-in"><a href="">Inicia sesión</a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                    <div class="col">
+                        <div class="menu-header">
+                            <!-- Area de Menú de Navegación Rapida e inicio de sesión -->
+                            <ul>
+                                <li><a href="">Home</a></li>
+                                <li><a href="">Cuartico</a></li>
+                                <li><a href="">Contacto</a></li>
+                                <li class="sign-in"><a href="">Inicia sesión</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
 
        
@@ -49,7 +52,7 @@
              En esta area aparece el identificando nuevamente el nombre del centro en conjunto con una imagen 
              de fondo de la sala de lectura
           -->
-        <div class="main-title">
+        <div class="main-title" background={% static 'images/hipster_workspace.jpg' %}>
             <h1>Centro de Estudiantes de Ingeniería de la Computación</h1>
         </div>
 
@@ -70,12 +73,12 @@
             y profesional, información propia del centro y el CEIC SUITE
          -->
         <div class="Navbar">
-            <table class="table-header">
-                <tr>
-                    <td><img class="logo-navbar" src={% static 'images/logo.png' %} alt="Logo del Ceic"></td>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col"><img class="logo-navbar" src={% static 'images/logo.png' %} alt="Logo del Ceic"></div>
                     <!--Salita-->
                     <!--Links a las paginas de los servicios relacionados a la sala de lectura-->
-                    <td>
+                    <div class="col">
                         <ul>
                             <li><p><strong>Salita</strong></p></li>
                             <br>
@@ -84,10 +87,10 @@
                             <li><a href="">Catalogo en Linea</a></li>
                         </ul>
                        
-                    </td>
+                    </div>
                     <!--Profesión-->
                     <!--Links a las paginas relacionadas al desarrollo academico y profesional de los computistas -->
-                    <td>
+                    <div class="col">
                         <ul>
                             <li><p><strong>Profesión</strong></p></li>
                             <li><a href="">Pasantias</a></li>
@@ -95,38 +98,40 @@
                             <li><a href="">Servicio comunitario</a></li>
                             <li><a href="">Miniproyecto</a></li>
                         </ul>
-                    </td>
+                    </div>
                     <!--Ceic Suite-->
                     <!--PENDIENTE: Servicios relacionados al CEIC SUITE como prestamos de libros-->
-                    <td>
+                    <div class="col">
                         <ul>
                            <li><p><strong>Ceic Suite</strong></p></li>
                             <li><a href="">Sistema de ventas</a></li>
                             <li><a href="">Sistema de ventas</a></li>
                             <li><a href="">Sistema de ventas</a></li>
                         </ul>
-                    </td>
+                    </div>
                     <!--Información-->
                     <!--Links a las paginas de infomración especifica del Centro de estudiantes-->
-                    <td>
+                    <div class="col">
                         <ul>
                             <li><p><strong>Información</strong></p></li>
                             <li><a href="">Contactenos</a></li>
                             <li><a href="">FAQ</a></li>
                             <li><a href="">Sistema de ventas</a></li>
                         </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <!--Area del NAvbar dedicada a mostrar las redes sociales del Centro para que los usuarios puedas
-                            estar actualizados con la información de la carrera-->
-                            <li><a href="https://twitter.com/USBCEIC" target="_blank"><img src={% static 'images/twitter.svg' %} alt="Logo Twitter"></a></li>
-                            <li><a href="https://www.instagram.com/usbceic/" target="_blank"><img src={% static 'images/instagram.svg' %} alt="Logo Instagram"></a></li>
-                            <li><a href="https://www.linkedin.com/company/ceicusb/" target="_blank"><img src={% static 'images/linkedin.svg' %} alt="Logo linkedIn"></a></li>
-                        </ul>
-                    </td>
-                </tr>
-            </table>
+                    </div>
+                    <div class="col">
+                        <div class="redes">
+                            <ul>
+                                <!--Area del NAvbar dedicada a mostrar las redes sociales del Centro para que los usuarios puedas
+                                estar actualizados con la información de la carrera-->
+                                <li><a href="https://twitter.com/USBCEIC" target="_blank"><img src={% static 'images/twitter.svg' %} alt="Logo Twitter"></a></li>
+                                <li><a href="https://www.instagram.com/usbceic/" target="_blank"><img src={% static 'images/instagram.svg' %} alt="Logo Instagram"></a></li>
+                                <li><a href="https://www.linkedin.com/company/ceicusb/" target="_blank"><img src={% static 'images/linkedin.svg' %} alt="Logo linkedIn"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
         </div>
 
@@ -138,5 +143,8 @@
         <footer>
             <p> &copy; 2018 CEIC Official Website - All rights reserved</p>
         </footer>
+
+        <script src={% static 'bootstrap/js/jquery-3.3.1.min.js' %}></script>
+        <script src={% static 'bootstrap/js/bootstrap.min.js' %}></script>
     </body>
 </html>

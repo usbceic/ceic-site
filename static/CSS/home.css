@@ -4,12 +4,10 @@
     al igual que bloqueamos que se repita y le ponemos el artributo fixed
     para que no se mueva y simule el efecto parallax.
 */
-body{
-    margin:0px 0px 0px 0px;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+
+@font-face{
+    font-family: 'K2D';
+    src:url('../fonts/K2D/K2D-Regular.ttf')
 }
 
 body, html {
@@ -23,32 +21,12 @@ body, html {
     debe tener con respecto al resto de los elementos y al borde.
 */
 .logo-header{
-    width: 60px;
+    width: 90px;
     padding-left: 25px;
     padding-right: 5px;
     padding-top: 5px;
     padding-bottom: 5px;
 }
-
-/*
-    Barra donde tenemos alojado el menú del sitio, el nombre y el logo. Utilizamos padding para
-    defnir su distancia con respecto a los bordes y el tamaño en 100 para que ocupe todo el ancho
-    de la pantalla.
-*/
-
-header table{
-    padding-top: 15px;
-    padding-left: 25px;
-    padding-right: 25px;
-    width: 100%;
-}
-
-/*
-    Definimos el tipo de letra a utilizar en todo el div, siendo escogida la google font K2D, el color de 
-    fondo de la barra, el clor del texto, la eliminación de los atributos graficos de los links y que ocupe
-    el total de la pantalla. Se utiliza el atributo fixed para que la barra no se mueve y sea visible en todo
-    momento.
-*/
 
 header{
     font-family: 'K2D', sans-serif;
@@ -57,13 +35,14 @@ header{
     text-decoration: none;
     position: fixed;
     width: 100%;
-    margin-top: -19%;
+}
+.Title{
+    padding-top: 20px;
 }
 
-/*
-   Definimos los atributos del texto. El alto de texto para que las lineas estén menos separas, alineados
-   a la izquieda, sin decoración, de color blanco y con el padding correpondiente para mantener la sepración.
-*/
+.menu-header{
+    padding-top: 20px;
+}
 
 header p{
     line-height: 25%;
@@ -117,16 +96,6 @@ header li{
     Se agrega padding en la parte superior e inferior para que sea un cuadro de tamaño similar al alto de la pantalla, se 
     define el tipo de fuente en K2D (Google Font), de tamaño 15 y color blanco para hacer contraste con el fondo. Centrada
 */
-.main-title{
-    padding-top: 50px;
-    padding-bottom: 50px;
-    font-family: 'K2D', sans-serif;
-    font-size: 15pt;
-    color: #fefffd;
-    text-align: center;
-    z-index: 30;
-    margin: 250px;
-}
 
 
 /*Espacio de Creatividad*/
@@ -156,6 +125,8 @@ header li{
     font-size: 10pt;
     font-family: 'K2D', sans-serif;
     column-count: 1;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .Navbar a{
@@ -163,22 +134,14 @@ header li{
     text-decoration: none;
 }
 
-/*
-    Utilizamos el paddig para definir la separación de la tabla que contiene todos los menús de los bordes, así coincide con 
-    el diseño propuesto. De igual manera se pone el valor width en 100% para que seimpre sea tan ancha como la pantalla.
-    Se eliminan los puntos de las listas para cumplir con el diseño.
-*/
-.table-header{
-    padding-top: 25px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 25px;
-    width: 100%;
-}
-
 .Navbar ul{
     list-style: none;
 }
+
+.redes{
+    width: 20px;
+}
+
 
 /*Footer*/
 /*
@@ -188,7 +151,7 @@ header li{
 */
 footer{
     text-align: center;
-    font-size: 11pt;
+    font-size: 12pt;
     background: #00076D;
     padding-top: 1px;
     padding-bottom: 1px;
@@ -199,4 +162,4 @@ footer p{
     color:#fefffd;
     font-family: 'K2D', sans-serif;
     z-index: 20;
-}
+} 
