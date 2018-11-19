@@ -23,37 +23,14 @@
              En este div tenemos el logo del centro la identififacaión, un menu de navegación de acceso rapido y el boton
              de inicio de sesión para los computistas afiliados 
           -->
-        <header>
-            <div class="container-fluid">
-                <div class="row">
-                     <!-- Area de identifiación del sitio web: Logo y Nombre -->
-                    <div class="col-md-1"><img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic"></div>
-                    <div class="Title">
-                        <p><strong>Centro de estudiantes de Ingeniería de la Computación</strong></p>
-                        <p><i>Universidad Simón Bolívar</i></p>
-                    </div>
-                    <div class="col">
-                        <div class="menu-header">
-                            <!-- Area de Menú de Navegación Rapida e inicio de sesión -->
-                            <ul>
-                                <li><a href="">Home</a></li>
-                                <li><a href="">Cuartico</a></li>
-                                <li><a href="">Contacto</a></li>
-                                <li class="sign-in"><a href="">Inicia sesión</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
             <img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic">
-            <a class="navbar-brand" href="#">Centro de estudiantes de Ingeniería de la Computación</a>
+            <a class="navbar-brand" href="#"><strong>Centro de estudiantes de Ingeniería de la Computación</strong><br>
+                <i>Universidad Simón Bolívar</i></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse offset-md-5" id="navbarNav">
+                <div class="collapse navbar-collapse offset-md-4" id="navbarNav">
                     <ul class="navbar-nav">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -65,7 +42,7 @@
                         <a class="nav-link" href="#">Contacto</a>
                     </li>
                     <form class="form-inline">
-                        <button class="btn btn-outline-success" type="button">Iniciar sesión</button>
+                        <button class="btn btn-outline-success btn-navbar" type="button">Iniciar sesión</button>
                     </form>
                     </ul>
                 </div>
