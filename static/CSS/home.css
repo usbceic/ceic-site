@@ -97,6 +97,10 @@ header li{
     define el tipo de fuente en K2D (Google Font), de tamaño 15 y color blanco para hacer contraste con el fondo. Centrada
 */
 
+a:hover{
+    color: yellow;
+    text-decoration: none;
+}
 
 /*Espacio de Creatividad*/
 .Nada{
