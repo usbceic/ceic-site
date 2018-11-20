@@ -8,12 +8,48 @@
     font-family: 'K2D';
 }
 
+html {
+    font-size: 1rem;
+  }
+  
+  @include media-breakpoint-up(sm) {
+    html {
+      font-size: 1.2rem;
+    }
+  }
+  
+  @include media-breakpoint-up(md) {
+    html {
+      font-size: 1.4rem;
+    }
+  }
+  
+  @include media-breakpoint-up(lg) {
+    html {
+      font-size: 1.6rem;
+    }
+  }
+
 /* sobreescribir clase de titulo de navbar de bootstrap para adaptar al site*/
 .navbar-brand{
     font-size: 1em;
     line-height: 1.3;
 }
 
+/* Media queries para hacer responsive el navbar */
+@media screen and (max-width:800px){
+    .navbar-brand{
+        font-size: 0.75em;
+        line-height: 1;
+        text-align: center;
+    }
+    .nav-item{
+        text-align: center;
+    }
+    .logo-header{
+        margin-top: 5px;
+    }
+} 
 .btn-navbar{
     color:  white;
     border-color:white;

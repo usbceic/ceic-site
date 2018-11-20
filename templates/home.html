@@ -23,29 +23,31 @@
              En este div tenemos el logo del centro la identififacaión, un menu de navegación de acceso rapido y el boton
              de inicio de sesión para los computistas afiliados 
           -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <img class="logo-header" src={% static 'images/logo.png' %} alt="Logo del Ceic">
-            <a class="navbar-brand" href="#"><strong>Centro de estudiantes de Ingeniería de la Computación</strong><br>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">           
+                <img class="logo-header mx-auto d-block" src={% static 'images/logo.png' %} alt="Logo del Ceic">
+                <a class="navbar-brand" href="#"><strong>Centro de estudiantes de Ingeniería de la Computación</strong><br>
                 <i>Universidad Simón Bolívar</i></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse offset-md-4" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Cuartico</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                    <form class="form-inline">
-                        <button class="btn btn-outline-success btn-navbar" type="button">Iniciar sesión</button>
-                    </form>
-                    </ul>
-                </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse offset-lg-4" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Cuartico</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <div class="d-flex justify-content-center">
+                <form class="form-inline">
+                    <button class="btn btn-outline-success btn-navbar" type="button">Iniciar sesión</button>
+                </form></div>
+                </ul>
+            </div>
         </nav>
 
        
@@ -54,13 +56,9 @@
              En esta area aparece el identificando nuevamente el nombre del centro en conjunto con una imagen 
              de fondo de la sala de lectura
           -->
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
+        <div>
                     <img src={% static 'images/ceic.jpg' %} style="width:100%" >
                     <h1 style="position: absolute;top: 70%;left: 15%;color: white">Centro de Estudiantes de Ingeniería de la Computación</h1>
-                </div>
-            </div>
         </div>
 
         <!--Espacio de Creatividad-->
