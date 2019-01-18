@@ -45,7 +45,7 @@ html {
 /* transparencia para la foto de ceic */
 
 .fotoceic {
-    opacity: 0.9;
+    opacity: 0.8;
 }
 /* sobreescribir clase de titulo de navbar de bootstrap para adaptar al site*/
 .navbar-brand{
