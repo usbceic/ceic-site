@@ -2,8 +2,34 @@
 Modelos
 """
 from django.db import models
-from django.contrib.auth.models import PermissionsMixin
-from django.contrib.auth.models import AbstractBaseUser
+from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+
+class UsuarioManager(BaseUserManager):
+    '''
+    Manager para el modelo de usuarios
+    '''
+
+    def create_user(self, username, first_name, last_name, email, carnet, phone_number, password=None):
+        '''
+        Crea el usuario normal
+        '''
+        user = Usuario(
+            username=username, first_name=first_name,
+            last_name=last_name, email=email, carnet=carnet,
+            phone_number=phone_number)
+        user.save()
+        return user
+
+    def create_superuser(self, username, first_name, last_name, email, carnet, phone_number, password):
+        '''
+        Crea un super usuario
+        '''
+        user = Usuario(
+            username=username, first_name=first_name,
+            last_name=last_name, email=email, carnet=carnet,
+            phone_number=phone_number, is_superuser=True)
+        user.save()
+        return user
 
 # Create your models here.
 class Usuario(AbstractBaseUser, PermissionsMixin):
@@ -23,12 +49,14 @@ class Usuario(AbstractBaseUser, PermissionsMixin):
     carnet = models.CharField(max_length=8, verbose_name='Número de Carnet', unique=True)
     phone_number = models.CharField(max_length=20, verbose_name='Número de Telefono', unique=True)
 
-    is_staff = models.BooleanField(verbose_name='Es Staff')
-    is_active = models.BooleanField(verbose_name='Está Activo')
+    is_staff = models.BooleanField(verbose_name='Es Staff', default=False)
+    is_active = models.BooleanField(verbose_name='Está Activo', default=True)
 
     USERNAME_FIELD = "username"
     EMAIL_FIELD = "email"
-    REQUIRED_FIELD = ["username", "first_name", "last_name", "email", "carnet", "phone_number"]
+    REQUIRED_FIELDS = ["first_name", "last_name", "email", "carnet", "phone_number"]
+
+    objects = UsuarioManager()
 
     def get_full_name(self):
         return self.first_name + " " + self.last_name
