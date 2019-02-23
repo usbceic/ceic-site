@@ -5,27 +5,39 @@ from django.db import models
 from django.contrib.auth.models import PermissionsMixin
 from django.contrib.auth.models import AbstractBaseUser
 
-from ./ceic_site/validators import validate_carnet
+from ..ceic_site.validators import validate_carnet
 
-# Create your models here.
+# Aquí se crean los modelos
 class Usuario(AbstractBaseUser, PermissionsMixin):
     """
     Tabla de usuarios de ceic_site
 
-    Los docs de django siempre recomiendan usar un modelos de Usuario
-    personalizado en vez del default. Asi no se aniadan mas campos despues
+    La tabla de usuarios está compuesta por los siguientes campos:
+    - Nombre de Usuario (único por persona)
+    - Primer Nombre
+    - Primer Apellido
+    - Correo Electronico (única por persona)
+    - Carnet Estudiantil (único por persona)
+    - Número Telefonico (único por persona)
     """
+    # Campo de Usuario
     username = models.CharField(max_length=100, verbose_name='Nombre de Usuario', unique=True)
+    # Campo de Primer Nombre
     first_name = models.CharField(max_length=100, verbose_name='Nombre')
+    # Campo de Segundo Nombre
     last_name = models.CharField(max_length=100, verbose_name='Apellido')
+    # Campo de Correo Electronico
     email = models.EmailField(
         max_length=100, verbose_name='Dirección de Correo Electronico',
         unique=True)
-    # TODO: Añadir regex de Carnet
-    carnet = models.CharField(max_length=8, verbose_name='Número de Carnet', unique=True,
+    # Campo de Carnet Estudiantil
+    carnet = models.CharField(
+        max_length=8, verbose_name='Número de Carnet', unique=True,
         validators=[validate_carnet])
+    # Campo de número Telefonico
     phone_number = models.CharField(max_length=20, verbose_name='Número de Telefono', unique=True)
 
+    # Campo para Verificación de Estado
     is_staff = models.BooleanField(verbose_name='Es Staff')
     is_active = models.BooleanField(verbose_name='Está Activo')
 
