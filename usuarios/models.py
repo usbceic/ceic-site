@@ -2,34 +2,10 @@
 Modelos
 """
 from django.db import models
-from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
+from django.contrib.auth.models import PermissionsMixin
+from django.contrib.auth.models import AbstractBaseUser
 
-class UsuarioManager(BaseUserManager):
-    '''
-    Manager para el modelo de usuarios
-    '''
-
-    def create_user(self, username, first_name, last_name, email, carnet, phone_number, password=None):
-        '''
-        Crea el usuario normal
-        '''
-        user = Usuario(
-            username=username, first_name=first_name,
-            last_name=last_name, email=email, carnet=carnet,
-            phone_number=phone_number)
-        user.save()
-        return user
-
-    def create_superuser(self, username, first_name, last_name, email, carnet, phone_number, password):
-        '''
-        Crea un super usuario
-        '''
-        user = Usuario(
-            username=username, first_name=first_name,
-            last_name=last_name, email=email, carnet=carnet,
-            phone_number=phone_number, is_superuser=True)
-        user.save()
-        return user
+from ./ceic_site/validators import validate_carnet
 
 # Create your models here.
 class Usuario(AbstractBaseUser, PermissionsMixin):
@@ -46,17 +22,16 @@ class Usuario(AbstractBaseUser, PermissionsMixin):
         max_length=100, verbose_name='Dirección de Correo Electronico',
         unique=True)
     # TODO: Añadir regex de Carnet
-    carnet = models.CharField(max_length=8, verbose_name='Número de Carnet', unique=True)
+    carnet = models.CharField(max_length=8, verbose_name='Número de Carnet', unique=True,
+        validators=[validate_carnet])
     phone_number = models.CharField(max_length=20, verbose_name='Número de Telefono', unique=True)
 
-    is_staff = models.BooleanField(verbose_name='Es Staff', default=False)
-    is_active = models.BooleanField(verbose_name='Está Activo', default=True)
+    is_staff = models.BooleanField(verbose_name='Es Staff')
+    is_active = models.BooleanField(verbose_name='Está Activo')
 
     USERNAME_FIELD = "username"
     EMAIL_FIELD = "email"
-    REQUIRED_FIELDS = ["first_name", "last_name", "email", "carnet", "phone_number"]
-
-    objects = UsuarioManager()
+    REQUIRED_FIELD = ["username", "first_name", "last_name", "email", "carnet", "phone_number"]
 
     def get_full_name(self):
         return self.first_name + " " + self.last_name
@@ -66,3 +41,4 @@ class Usuario(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.username
+        
